@@ -3,43 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/styles-cadastroCliente.css">
-    <title>Cadastro na Xhopii</title>
+    <link rel="stylesheet" href="../assets/styles-redefinir.css">
+    <title>Redefinir Senha da Xhopii</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <img alt="Xhopii logo" src="../img-logo-produtos/logo.png"/>
-        <p class="title">Xhopii</p>
-        <a class="logout" href="login.html" >Sair</a>
+        <section class="parte1">
+            Xhopii
+        </section>
+        <section>
+            <h2 class="parte2">Redefinir Senha</h2>
+        </section>
+        <section class="parte3">
+            <a href="#">Precisa de ajuda?</a>
+        </section>
     </header>
-    <nav class="menu">
-        <a href="#">Home</a>
-        <a href="cadastroCliente.html">Cadastro Cliente</a>
-        <a href="cadastroFuncionario.html">Cadastro Funcionário</a>
-        <a href="../view/cadastroProduto.html">Cadastro Produto</a>
-        <a href="#">Ver Clientes</a>
-        <a href="#">Ver Funcionários</a>
-        <a href="../view/VisualizacaoProduto.html">Ver Produtos</a>
-    </nav>
     <main>
-        <article class="cadastro-container">
-            <h2>Cadastrar Cliente</h2>
-            <form>
-                <input placeholder="Nome" type="text"/>
-                <input placeholder="Sobrenome" type="text"/>
-                <input placeholder="CPF" type="text"/>
-                <input placeholder="dd/mm/aaaa" type="date"/>
-                <input placeholder="Telefone" type="tel"/>
-                <input placeholder="Email" type="email"/>
-                <input placeholder="Senha" type="password"/>
-                <p>Selecionar foto de perfil:</p>
-                <label for="file-upload">Escolher arquivo</label>
-                <input id="file-upload" type="file"/>
-                <span class="file-name">Nenhum arquivo escolhido</span>
-                <button type="submit">CADASTRAR</button>
-            </form>
-        </article>
-
+        <section class="reset-box">
+            <a href="../view/login.html">Voltar ao Login</a>
+            <h2>Redefinir senha</h2>
+            <input placeholder="Email" type="email"/>
+            <button>ENVIAR</button>
+        </section>
     </main>
     <footer>
         <section class="opcoes">

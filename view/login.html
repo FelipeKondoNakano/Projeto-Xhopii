@@ -1,75 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../assets/styles-visualizacaoProduto.css">
-    <title>Xhopii</title>
-    <script>
-        function changeImage(image) {
-            document.getElementById('mainImage').src = image;
-        }
-        function selectedSize(size) {
-            document.getElementById('selectedSize').textContent = size;
-        }
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles-login.css">
+    <title>Login na Xhopii</title>
 </head>
 
 <body>
-    <header>
-        <img alt="Xhopii logo" src="../img-logo-produtos/logo.png"/>
-        <p class="title">Xhopii</p>
-        <a class="logout" href="login.html" >Sair</a>
-    </header>
-    <nav class="nav">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="../view/CadastroCliente.html">Cadastro Clientes</a></li>
-            <li><a href="../view/cadastroFuncionario.html">Cadastro Funcionário</a></li>
-            <li><a href="../view/cadastroProduto.html">Cadastro Produtos</a></li>
-            <li><a href="#">Ver Clientes</a></li>
-            <li><a href="#">Ver Funcionário</a></li>
-            <li><a href="../view/VisualizacaoProduto.html">Ver Produtos</a></li>
-        </ul>
-    </nav>
-    <article>
-        <section class="produtos">
-            <section class="body">
-                <img src="../img/produto1.png" alt="Camiseta Preta" onclick="changeImage('../img/produto1.png')">
-                <img src="../img/produto2.png" alt="Camiseta Azul" onclick="changeImage('../img/produto2.png')">
-                <img src="../img/produto3.png" alt="Camiseta Verde" onclick="changeImage('../img/produto3.png')">
-                <img src="../img/produto4.png" alt="Camiseta Cinza" onclick="changeImage('../img/produto4.png')">
-                <img src="../img/produto5.png" alt="Camiseta Rosa" onclick="changeImage('../img/produto5.png')">
-            </section>
-            <section class="bodyII">
-                <img id="mainImage" src="../img/produto1.png" alt="Produto Principal">
-            </section>
-            <section class="text">
-                <h2>Camisa Desenvolvedor front-end CSS</h2>
-                <p class="preco">R$ 56,90</p>
-                <p>171 peças disponíveis</p>
-                <p>Modelos:</p>
-                <section class="cores">
-                    <button onclick="changeImage('../img/produto1.png')">Preto</button>
-                    <button onclick="changeImage('../img/produto2.png')">Azul</button>
-                    <button onclick="changeImage('../img/produto3.png')">Verde</button>
-                    <button onclick="changeImage('../img/produto4.png')">Cinza</button>
-                    <button onclick="changeImage('../img/produto5.png')">Rosa</button>
-                </section>
-                <p>Tamanhos:</p>
-                <section class="sizes">
-                    <button onclick="selectedSize('P')">P</button>
-                    <button onclick="selectedSize('M')">M</button>
-                    <button onclick="selectedSize('G')">G</button>
-                    <button onclick="selectedSize('GG')">GG</button>
-                </section>
-                <p>Tamanho Selecionado: <span id="selectedSize">Nenhum</span></p>
-                <section class="buy">
-                    <button>Comprar Agora</button>
-                </section>
-            </section>
+    <header class="header">
+        <img alt="Xhopii logo" src="../img-logo-produtos/logo.png" />
+        <section class="parte1">
+            Xhopii
         </section>
-    </article>
+        <section>
+            <h2 class="parte2">Entre</h2>
+        </section>
+        <section class="parte3">
+            <a href="#">Precisa de ajuda?</a>
+        </section>
+    </header>
+    <main>
+        <article class="login-container">
+            <h2>Login</h2>
+            <input placeholder="Email" type="text" />
+            <input placeholder="Senha" type="password" />
+            <button class="entre" onclick="window.location.href='../view/VisualizacaoProduto.html'">
+                ENTRE<!--dps colocar link para home page-->
+            </button>
+            <section class="links">
+                <a href="../view/redefinirSenha.html">Esqueci minha senha</a>
+                <a href="#">Fazer login com SMS</a>
+            </section>
+            <section class="or">OU</section>
+            <section class="social-login">
+                <button>
+                    <img src="../img-acesso/facebook.png" alt="Acesso Facebook">
+                    <i class="fab fa-facebook-f"></i>Facebook
+                </button>
+                <button>
+                    <img src="../img-acesso/google.png" alt="Acesso Google">
+                    <i class="fab fa-google"></i>Google
+                </button>
+                <button>
+                    <img src="../img-acesso/apple.png" alt="Acesso Apple">
+                    <i class="fab fa-apple"></i>Apple
+                </button>
+            </section>
+            <section class="register">Novo na Xhopii?
+                <a href="../index-cadastroCliente.html">Cadastrar</a>
+        </article>
+    </main>
     <footer>
         <section class="opcoes">
             <section class="atendimento">
