@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/styles-Cadastros.css">
-    <title>Cadastro de Clientes</title>
+    <title>Cadastro de Loja</title>
 </head>
 <body>
     <header>
@@ -25,19 +25,14 @@
     </nav>
     <main>
         <article class="cadastro-container">
-            <h2>Cadastrar Cliente</h2>
+            <h2>Cadastrar Empresa</h2>
             <form>
-                <input placeholder="Nome" type="text"/>
-                <input placeholder="Sobrenome" type="text"/>
-                <input placeholder="CPF" type="text"/>
-                <input placeholder="dd/mm/aaaa" type="date"/>
+                <input placeholder="Nome da Empresa" type="text"/>
+                <input placeholder="CNPJ" type="text"/>
                 <input placeholder="Telefone" type="tel"/>
+                <input placeholder="Nicho" type="text">
                 <input placeholder="Email" type="email"/>
                 <input placeholder="Senha" type="password"/>
-                <p>Selecionar foto de perfil:</p>
-                <label for="file-upload">Escolher arquivo</label>
-                <input id="file-upload" type="file"/>
-                <span class="file-name">Nenhum arquivo escolhido</span>
                 <button type="submit">CADASTRAR</button>
             </form>
         </article>
