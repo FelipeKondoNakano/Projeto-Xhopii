@@ -216,15 +216,20 @@ footer a:hover {
 /* Estilo da seção do carrossel */
 #carousel {
     margin: 0 auto;
-    padding: 20px 15px;
+    padding: 20px 0px 15px;
     max-width: 1200px;
 }
 
 /* carrossel baixo */
+.oferta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .oferta img{
-    margin-left: 35px;
     width: 1196px;
     padding: 20px 15px;
+
 }
 
 /* Estilo da barra de divisão */
