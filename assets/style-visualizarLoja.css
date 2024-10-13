@@ -33,7 +33,6 @@ header a{
     color: #ffffff;
 }
 
-
 /*Menu*/
 .menu {
     display: flex;
@@ -55,119 +54,59 @@ header a{
     background-color: #ffffff;
 }
 
-/*Oferta frete*/
-.oferta{
-    text-align: center;
-}
-
-.oferta img{
-    width: 70%;
-    height: 70%;
-}
-
-/*Barra divisa*/
-.container-divisa{
-    display: flex;
-    justify-content: center;
-}
-
-.divisa{
-    background-color: rgb(250, 128, 114); /* Salmão */
-    height: 2px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px 0;
-}
-
-/*Produtos*/
-main{
-    margin: 0% 10% 0% 10%;
-}
-
-#produtos {
+/*Main*/
+/*Main*/
+#lojas {
     padding: 20px 0;
-}
-
-.card {
-    margin-bottom: 20px;
-    width: 100%; /* Para garantir que os cards ocupem toda a largura disponível */
-    max-width: 200px;
-    
-}
-
-.card img{
-    width: 100%;
-    height: 100%;
-}
-
-.card-link {
-    text-decoration: none;
-    color: inherit;
-    padding: 10px;
-
-    border: 2px solid transparent;
+    margin: 0 10%;
+    background-color: white;
     border-radius: 5px;
-    box-shadow: 
-        0 4px 8px rgba(0, 0, 0, 0.2),  /* Sombra maior para o relevo */
-        0 1px 2px rgba(0, 0, 0, 0.2);   /* Sombra menor para o detalhe */
-}
-.card-link:hover{
-    border-color: rgb(255, 87, 34);
-    
 }
 
-.card-body {
-
-    font-size: 16px;
-    text-align: left;
-    font-weight: normal;
-
-}
-
-.card-title{
-    font-size: 18px;
-}
-
-.card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.card-footer .preco {
-    color: rgb(251, 119, 48);
-    font-weight: bold;
-    font-size: 15px;
-}
-.card-footer .qtd {
-    margin: 0;
-    white-space: nowrap;
-    font-size: 15px;
-}
-/* Título produtos */
-#produtos h2 {
+#lojas h2 {
     color: rgb(251, 119, 48);
     font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
 }
 
-/* Ajuste para as colunas de cards */
-.row {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os cards se ajustem em várias linhas */
-    gap: 20px; /* Adiciona espaçamento entre as colunas */
-}
-.container{
-    padding-bottom: 10px;
+.container {
+    padding: 20px;
+    overflow-x: auto;
+    
 }
 
-.caixa-prod{
-    flex: 1 0 20%; /* Cada card ocupará 20% da largura da linha */
-    display: flex;
-    justify-content: center;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+    
+}
 
+thead {
+    background-color: #ff7f50;
+    color: white;
+}
+
+th, td {
+    
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+}
+
+td a {
+    color: #ff4500;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
 }
 
 /*Footer*/

@@ -4,6 +4,8 @@ body {
     padding: 0;
     background-color: #d3d3d3;
 }
+
+/*Cabecalho*/
 header {
     height: 50px;
     display: flex;
@@ -32,6 +34,8 @@ header a{
     color: #ffffff;
 }
 
+
+/*Menu*/
 .menu {
     display: flex;
     justify-content: center;
@@ -51,6 +55,7 @@ header a{
     color: #ff4500;
     background-color: #ffffff;
 }
+
 .cadastro-container {
     width: 100%;
     max-width: 600px;
